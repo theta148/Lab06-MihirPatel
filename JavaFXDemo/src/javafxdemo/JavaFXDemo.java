@@ -65,12 +65,26 @@ public class JavaFXDemo extends Application{
         Line line1 = new Line();
         line1.setStartX(X1);
         line1.setStartY(Y1);
-        line1.setEndX(X2);
-        line1.setEndY(Y2);
+        line1.setEndX(X3);
+        line1.setEndY(Y3);
         
         Line line2 = new Line();
+        line2.setStartX(X3 + WIDTH3);
+        line2.setStartY(Y3 + LENGTH3);
+        line2.setEndX(X1 + WIDTH1);
+        line2.setEndY(Y1 + LENGTH1);
+        
         Line line3 = new Line();
+        line3.setStartX(X1);
+        line3.setStartY(Y1 + LENGTH1);
+        line3.setEndX(X3);
+        line3.setEndY(Y3 + LENGTH3);
+        
         Line line4 = new Line();
+        line4.setStartX(X1 + LENGTH1);
+        line4.setStartY(Y1);
+        line4.setEndX(X3 + LENGTH3);
+        line4.setEndY(Y3);
         
         Circle c = new Circle();
         c.setRadius(RADIUS);
@@ -78,7 +92,7 @@ public class JavaFXDemo extends Application{
         c.setCenterY(CENTER_Y);
         c.setFill(Color.BLACK);
         
-        Pane root = new Pane(sq1, sq2, sq3, c);
+        Pane root = new Pane(sq1, sq2, sq3, line1, line2, line3, line4, c);
         
         Scene scene = new Scene(root, 520, 520);
         
