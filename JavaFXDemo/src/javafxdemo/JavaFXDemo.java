@@ -94,7 +94,7 @@ public class JavaFXDemo extends Application{
         
         Pane root = new Pane(sq1, sq2, sq3, line1, line2, line3, line4, c);
         
-        Scene scene = new Scene(root, 520, 520);
+        Scene scene = new Scene(root, SCENE_WIDTH, SCENE_LENGTH);
         
         stage.setScene(scene);
         stage.setTitle("j");
